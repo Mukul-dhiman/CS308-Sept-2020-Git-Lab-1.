@@ -1,4 +1,4 @@
-/* This program computes the square root of a
+	/* This program computes the square root of a
 positive number. */
 
 #include <stdio.h>
@@ -11,7 +11,7 @@ positive number. */
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
-		printf("Usage: sqrt input\n\n");
+		printf("NEGSUPPORT: Usage: sqrt input\n\n");
 		exit(-1);
 	}
 	printf("welcome to my code\n");
@@ -19,14 +19,11 @@ int main(int argc, char* argv[]) {
 	int input = atoi(argv[1]);
 	bool negative=false;
 	if(input<0){
-		negative=true;
-		input=input*(-1);
+		printf("NEGSUPPORT: Enter a postive value :\\\n");
+		exit(0);
 	}
-	printf("Sqrt of %d is %f",input,sqrt(input));
-	if(negative){
-		printf("i\n");
-	}
-	printf("Program Exiting\n");
+	printf("NEGSUPPORT: Sqrt of %d is %f\n",input,sqrt(input));
+	printf("NEGSUPPORT: Program Exiting\n");
 	return(0);
 
 } // end main
