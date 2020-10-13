@@ -11,7 +11,7 @@ positive number. */
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
-		printf("NEGSUPPORT: Usage: sqrt input\n\n");
+		printf("DEBUG:Usage: sqrt input\n\n");
 		exit(-1);
 	}
 	printf("welcome to my code\n");
@@ -19,11 +19,11 @@ int main(int argc, char* argv[]) {
 	int input = atoi(argv[1]);
 	bool negative=false;
 	if(input<0){
-		printf("NEGSUPPORT: Enter a postive value :\\\n");
+		printf("DEBUG: Enter a postive value :\\\n");
 		exit(0);
 	}
-	printf("NEGSUPPORT: Sqrt of %d is %f\n",input,sqrt(input));
-	printf("NEGSUPPORT: Program Exiting\n");
+	printf("DEBUG: Sqrt of %d is %f\n",input,sqrt(input));
+	printf("DEBUG: Program Exiting\n");
 	return(0);
 
 } // end main
