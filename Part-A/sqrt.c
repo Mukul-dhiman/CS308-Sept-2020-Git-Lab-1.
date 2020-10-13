@@ -21,6 +21,7 @@ int main(int argc, char* argv[]) {
 		exit(0);
 	}
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
+	printf("Program Exiting\n");
 	return(0);
 
 } // end main
