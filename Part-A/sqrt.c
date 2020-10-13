@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
 		printf("Usage: sqrt input\n\n");
 		exit(-1);
 	}
-
+	printf("welcome to my code\n");
 	
 	int input = atoi(argv[1]);
 	bool negative=false;
