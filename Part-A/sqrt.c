@@ -4,6 +4,7 @@ positive number. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <stdbool.h>
 
 // use "gcc sqrt.c -o sqrt -lm && ./sqrt {enter any positive value}" to compl=ile and run the program
 
@@ -16,11 +17,15 @@ int main(int argc, char* argv[]) {
 
 	
 	int input = atoi(argv[1]);
+	bool negative=false;
 	if(input<0){
-		printf("Enter a postive value :\\\n");
-		exit(0);
+		negative=true;
+		input=input*(-1);
 	}
-	printf("Sqrt of %d is %f\n",input,sqrt(input));
+	printf("Sqrt of %d is %f",input,sqrt(input));
+	if(negative){
+		printf("i\n");
+	}
 	printf("Program Exiting\n");
 	return(0);
 
